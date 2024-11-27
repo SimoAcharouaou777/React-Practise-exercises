@@ -4,11 +4,13 @@ import './App.css';
 
 import Exercise1Page from './pages/Exercise1Page';
 import Exercise2Page from './pages/Exercise2Page';
+import Exercise3Page from './pages/TaskManagerWithTags'
 
 const App = () => {
   const exercises = [
     { id: 1, name: 'Exercise 1' },
     { id: 2, name: 'Exercise 2' },
+    { id: 3, name: 'Exercise 3'}
   ];
 
   return (
@@ -37,6 +39,7 @@ const App = () => {
         <Routes>
           <Route path="/exercise1" element={<Exercise1Page />} />
           <Route path="/exercise2" element={<Exercise2Page />} />
+          <Route path="/exercise3" element={<Exercise3Page />} />
           <Route
             path="/"
             element={
