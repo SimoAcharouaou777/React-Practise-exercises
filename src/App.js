@@ -2,15 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
-import Exercise1Page from './pages/Exercise1Page';
-import Exercise2Page from './pages/Exercise2Page';
-import Exercise3Page from './pages/TaskManagerWithTags'
+import Exercise1Page from './components/Exercise1Page';
+import Exercise2Page from './components/Exercise2Page';
+import Exercise3 from './components/Exercise3';
+import TaskManagerWithTags from './components/TaskManagerWithTags'
 
 const App = () => {
   const exercises = [
     { id: 1, name: 'Exercise 1' },
     { id: 2, name: 'Exercise 2' },
-    { id: 3, name: 'Exercise 3'}
+    { id: 3, name: 'Exercise 3'},
+    { id: 4, name: 'Exercise 4'}
   ];
 
   return (
@@ -39,7 +41,8 @@ const App = () => {
         <Routes>
           <Route path="/exercise1" element={<Exercise1Page />} />
           <Route path="/exercise2" element={<Exercise2Page />} />
-          <Route path="/exercise3" element={<Exercise3Page />} />
+          <Route path="/exercise3" element={<Exercise3 />} />
+          <Route path="/exercise4" element={<TaskManagerWithTags />} />
           <Route
             path="/"
             element={

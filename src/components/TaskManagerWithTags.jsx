@@ -32,10 +32,7 @@ const TaskManagerWithTags = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-8">
-      {/* Header */}
       <h1 className="text-4xl font-bold text-blue-600 mb-6">Task Manager with Tags</h1>
-
-      {/* Input for Task */}
       <div className="flex gap-4 mb-4">
         <input
           value={taskName}
@@ -51,7 +48,6 @@ const TaskManagerWithTags = () => {
         </button>
       </div>
 
-      {/* Input for Tags */}
       <div className="flex gap-4 mb-6">
         <input
           value={tagInput}
@@ -67,7 +63,6 @@ const TaskManagerWithTags = () => {
         </button>
       </div>
 
-      {/* Current Tags */}
       {tags.length > 0 && (
         <div className="flex gap-2 mb-4">
           {tags.map((tag, index) => (
@@ -81,7 +76,6 @@ const TaskManagerWithTags = () => {
         </div>
       )}
 
-      {/* Filter by Tags */}
       <div className="mb-4">
         <select
           value={filterTag}
@@ -99,7 +93,6 @@ const TaskManagerWithTags = () => {
         </select>
       </div>
 
-      {/* Task List */}
       <ul className="w-full max-w-lg bg-white rounded-lg shadow-md p-4">
         {filteredTasks.length === 0 ? (
           <li className="text-center text-gray-500">No tasks found.</li>
