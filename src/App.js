@@ -5,9 +5,11 @@ import './App.css';
 import Exercise1Page from './components/Exercise1Page';
 import Exercise2Page from './components/Exercise2Page';
 import Exercise3 from './components/Exercise3';
-import TaskManagerWithTags from './components/TaskManagerWithTags'
-import DynamicStyling from './components/DynamicStyling'
+import TaskManagerWithTags from './components/TaskManagerWithTags';
+import DynamicStyling from './components/DynamicStyling';
 import FetchDateComponent from './components/FetchDataComponent';
+import SearchFilter from './components/SearchFilter';
+import MockLogin from './components/MockLogin';
 
 const App = () => {
   const exercises = [
@@ -16,7 +18,9 @@ const App = () => {
     { id: 3, name: 'Exercise 3'},
     { id: 4, name: 'Exercise 4'},
     { id: 5, name: 'Exercise 5'},
-    { id: 6, name: 'Exercise 6'}
+    { id: 6, name: 'Exercise 6'},
+    { id: 7, name: 'Exercise 7'},
+    { id: 8, name: 'Exercise 8'}
   ];
 
   return (
@@ -49,6 +53,9 @@ const App = () => {
           <Route path="/exercise4" element={<TaskManagerWithTags />} />
           <Route path="/exercise5" element={<DynamicStyling />} />
           <Route path="/exercise6" element={<FetchDateComponent />} />
+          <Route path="/exercise7" element={<SearchFilter />} />
+          <Route path="/exercise8" element={<MockLogin />} />
+
           <Route
             path="/"
             element={
