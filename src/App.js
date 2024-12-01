@@ -10,6 +10,7 @@ import DynamicStyling from './components/DynamicStyling';
 import FetchDateComponent from './components/FetchDataComponent';
 import SearchFilter from './components/SearchFilter';
 import MockLogin from './components/MockLogin';
+import ItemNavigator from './components/ItemNavigator';
 
 const App = () => {
   const exercises = [
@@ -20,7 +21,8 @@ const App = () => {
     { id: 5, name: 'Exercise 5'},
     { id: 6, name: 'Exercise 6'},
     { id: 7, name: 'Exercise 7'},
-    { id: 8, name: 'Exercise 8'}
+    { id: 8, name: 'Exercise 8'},
+    { id: 9, name: 'Exercise 9'}
   ];
 
   return (
@@ -55,6 +57,7 @@ const App = () => {
           <Route path="/exercise6" element={<FetchDateComponent />} />
           <Route path="/exercise7" element={<SearchFilter />} />
           <Route path="/exercise8" element={<MockLogin />} />
+          <Route path="/exercise9" element={<ItemNavigator />} />
 
           <Route
             path="/"
