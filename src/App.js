@@ -11,6 +11,8 @@ import FetchDateComponent from './components/FetchDataComponent';
 import SearchFilter from './components/SearchFilter';
 import MockLogin from './components/MockLogin';
 import ItemNavigator from './components/ItemNavigator';
+import ParentComponent from './components/ParentComponent';
+import Timer from './components/Timer';
 
 const App = () => {
   const exercises = [
@@ -22,7 +24,9 @@ const App = () => {
     { id: 6, name: 'Exercise 6'},
     { id: 7, name: 'Exercise 7'},
     { id: 8, name: 'Exercise 8'},
-    { id: 9, name: 'Exercise 9'}
+    { id: 9, name: 'Exercise 9'},
+    { id: 10, name: 'Exercise 10'},
+    { id: 11, name: 'Exercise 11'}
   ];
 
   return (
@@ -58,6 +62,8 @@ const App = () => {
           <Route path="/exercise7" element={<SearchFilter />} />
           <Route path="/exercise8" element={<MockLogin />} />
           <Route path="/exercise9" element={<ItemNavigator />} />
+          <Route path="/exercise10" element={<ParentComponent />} />
+          <Route path="/exercise11" element={<Timer />} />
 
           <Route
             path="/"
